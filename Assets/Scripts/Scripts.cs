@@ -51,19 +51,19 @@ public class Scripts : MonoBehaviour
 
         //Exercici 1
 
-        result = Math.Max(num1, num2);
-        Debug.Log($"El numero mayor entre {num1} y {num2} es: {result}");
+        result = Math.Min(num1, num2);
+        Debug.Log($"El numero menor entre {num1} y {num2} es: {result}");
 
 
         //Exercici 2
 
-        if (letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U")
+        if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u")
         {
-            Debug.Log($" la letra {letra} es una vocal");
+            Debug.Log($"true");
         }
         else
         {
-            Debug.Log($" la letra {letra} es una consonante");
+            Debug.Log($"false");
         }
 
         //Exercici 3
