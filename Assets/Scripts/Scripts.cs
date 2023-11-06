@@ -15,7 +15,7 @@ public class Scripts : MonoBehaviour
 
     [SerializeField] private string letra;
 
-    //Variables Exercici 3
+    //Variables Exercicis 5 i 6
 
     [SerializeField] private int days = 0;
     [SerializeField] private int months = 0;
@@ -136,11 +136,17 @@ private void Start()
 
         Debug.Log($"La base del triangulo es {0.5 * basetriangulo * alturatriangulo}");
 
-        //Exercici 
+        //Exercici 6
 
-        DateTime date = new DateTime(years, months, days);
-        date = date.AddDays(- 1);
-        Debug.Log(date);
+        DateTime datemenos = new DateTime(years, months, days);
+        datemenos = datemenos.AddDays(- 1);
+        Debug.Log(datemenos);
+
+        //Exercici 5
+
+        DateTime datemas = new DateTime(years, months, days);
+        datemas = datemas.AddDays(+ 1);
+        Debug.Log(datemas);
 
 
     }
