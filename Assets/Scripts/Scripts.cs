@@ -17,6 +17,12 @@ public class Scripts : MonoBehaviour
 
     //Variables Exercici 3
 
+    [SerializeField] private int days = 0;
+    [SerializeField] private int months = 0;
+    [SerializeField] private int years = 0;
+
+    //Variables Exercici ??
+
     [SerializeField] private int num3 = 4;
     [SerializeField] private int num4 = 8;
 
@@ -24,11 +30,6 @@ public class Scripts : MonoBehaviour
 
     [SerializeField] private string nota;
 
-    //Variables Exercicis 5 i 7
-
-    [SerializeField] private int days = 0;
-    [SerializeField] private int months = 0;
-    [SerializeField] private int years = 0;
 
     // Variables Exercici 8
 
@@ -68,14 +69,48 @@ public class Scripts : MonoBehaviour
 
         //Exercici 3
 
-        if (num3 % num4 == 0)
+        if (months == 1 || months == 3 || months == 5 || months == 7 || months == 9 || months == 11)
         {
-            Debug.Log($"{num3} es divisible per {num4}");
+            if (days <= 31 && days > 0 && years > 0)
+            {
+                Debug.Log($"true");
+            }
+            else
+            {
+                Debug.Log("false");
+            }
+
+        }
+        else if (months == 2)
+        {
+            if (days <= 28 && days > 0 && years > 0)
+            {
+                Debug.Log($"true");
+            }
+            else
+            {
+                Debug.Log("false");
+            }
+
+        }
+        else if (months == 4 || months == 6 || months == 8 || months == 10 || months == 12)
+        {
+            if (days <= 30 && days > 0 && years > 0)
+            {
+                Debug.Log($"true");
+
+            }
+            else
+            {
+                Debug.Log("false");
+            }
         }
         else
         {
-            Debug.Log($"{num3} no es divisible per {num4}");
+            Debug.Log("false");
         }
+
+
 
         //Exercici 4
 
